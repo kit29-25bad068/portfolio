@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Joshika – AI & Data Science Developer</title>
+  <meta name="description" content="Get in touch with Joshika for internship opportunities, project collaborations, or mentorship. Based in Coimbatore, Tamil Nadu." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://joshika.dev/contact.html" />
+
+  <meta property="og:title"       content="Contact Joshika" />
+  <meta property="og:description" content="Reach out for internships, collaborations, or just to say hello." />
+  <meta property="og:url"         content="https://joshika.dev/contact.html" />
+  <meta property="og:type"        content="website" />
+  <meta name="theme-color"        content="#0A0E1A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .page-hero { padding: var(--space-16) 0 var(--space-12); border-bottom: 1px solid var(--color-border); }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(var(--text-4xl), 6vw, var(--text-5xl)); font-weight: 700; letter-spacing: -2px; margin-bottom: var(--space-4); }
+    .page-hero p { font-size: var(--text-lg); color: var(--color-muted); max-width: 560px; line-height: 1.7; }
+
+    .availability-badge { display: inline-flex; align-items: center; gap: var(--space-2); font-family: var(--font-mono); font-size: var(--text-sm); background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.3); color: var(--color-success); padding: var(--space-2) var(--space-4); border-radius: 999px; margin-top: var(--space-4); }
+    .availability-dot { width: 8px; height: 8px; background: var(--color-success); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    @media (prefers-reduced-motion: reduce) { .availability-dot { animation: none; } }
+
+    .form-section { padding: var(--space-16) 0 var(--space-24); }
+    .contact-sidebar { position: sticky; top: 80px; }
+
+    .contact-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6); }
+    .contact-card h3 { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-4); }
+
+    .platform-links { display: flex; flex-direction: column; gap: var(--space-3); }
+    .platform-link { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); text-decoration: none; transition: border-color var(--transition); }
+    .platform-link:hover { border-color: var(--color-accent); opacity: 1; }
+    .platform-icon { font-size: 1.2rem; width: 32px; text-align: center; }
+    .platform-info { display: flex; flex-direction: column; }
+    .platform-name { font-size: var(--text-sm); font-weight: 500; color: var(--color-text); }
+    .platform-handle { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-muted); }
+
+    .form-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-10); }
+    .form-card h2 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; letter-spacing: -0.5px; margin-bottom: var(--space-2); }
+    .form-card > p { color: var(--color-muted); font-size: var(--text-sm); margin-bottom: var(--space-8); }
+
+    fieldset { border: none; padding: 0; margin: 0 0 var(--space-2) 0; }
+    legend { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--space-4); display: block; width: 100%; }
+
+    .submit-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); }
+    .submit-note { font-size: var(--text-xs); color: var(--color-muted); font-family: var(--font-mono); }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Primary navigation">
+        <a href="../index.html" class="nav-logo" aria-label="Joshika – Home">joshika<span aria-hidden="true">.</span>dev</a>
+        <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+            <rect y="4"  width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="page-hero" aria-labelledby="contact-page-heading">
+      <div class="container">
+        <span class="section-eyebrow" aria-hidden="true">// get in touch</span>
+        <h1 id="contact-page-heading">Let's connect</h1>
+        <p>Open to internships, project collaborations, and mentorship. I reply to every message.</p>
+        <div class="availability-badge" role="status" aria-label="Currently available for internships">
+          <span class="availability-dot" aria-hidden="true"></span>
+          Available for internships
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Sidebar -->
+          <aside aria-label="Contact information and links">
+            <div class="contact-sidebar">
+
+              <div class="contact-card">
+                <h3>Direct contact</h3>
+                <ul class="contact-info-list" role="list">
+                  <li class="contact-info-item">
+                    <span class="icon-wrap" aria-hidden="true">✉</span>
+                    <a href="mailto:joshika@example.com" aria-label="Send email to joshika at example dot com">joshika@example.com</a>
+                  </li>
+                  <li class="contact-info-item">
+                    <span class="icon-wrap" aria-hidden="true">📍</span>
+                    <span>Coimbatore / Chennai, Tamil Nadu</span>
+                  </li>
+                  <li class="contact-info-item">
+                    <span class="icon-wrap" aria-hidden="true">⏱</span>
+                    <span>Typically replies within 24 hours</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contact-card">
+                <h3>Find me online</h3>
+                <nav class="platform-links" aria-label="Social and professional profiles">
+                  <a href="https://linkedin.com/in/joshika" class="platform-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+                    <span class="platform-icon" aria-hidden="true">🔗</span>
+                    <span class="platform-info">
+                      <span class="platform-name">LinkedIn</span>
+                      <span class="platform-handle">in/joshika</span>
+                    </span>
+                  </a>
+                  <a href="https://github.com/joshika" class="platform-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">
+                    <span class="platform-icon" aria-hidden="true">⌥</span>
+                    <span class="platform-info">
+                      <span class="platform-name">GitHub</span>
+                      <span class="platform-handle">github.com/joshika</span>
+                    </span>
+                  </a>
+                  <a href="https://devpost.com/joshika" class="platform-link" target="_blank" rel="noopener noreferrer" aria-label="Devpost profile (opens in new tab)">
+                    <span class="platform-icon" aria-hidden="true">🏆</span>
+                    <span class="platform-info">
+                      <span class="platform-name">Devpost</span>
+                      <span class="platform-handle">devpost.com/joshika</span>
+                    </span>
+                  </a>
+                  <a href="https://leetcode.com/joshika" class="platform-link" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile (opens in new tab)">
+                    <span class="platform-icon" aria-hidden="true">🧩</span>
+                    <span class="platform-info">
+                      <span class="platform-name">LeetCode</span>
+                      <span class="platform-handle">leetcode.com/joshika</span>
+                    </span>
+                  </a>
+                </nav>
+              </div>
+
+            </div>
+          </aside>
+
+          <!-- Form -->
+          <div class="form-card" role="region" aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading">Send a message</h2>
+            <p>All fields marked with <abbr title="required">*</abbr> are required.</p>
+
+            <div
+              id="form-success"
+              class="form-success"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+              tabindex="-1"
+              hidden
+            >
+              <span aria-hidden="true">✅</span>
+              Message sent! I'll get back to you within 24 hours.
+            </div>
+
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="#"
+              method="POST"
+              novalidate
+              aria-labelledby="contact-form-heading"
+            >
+              <fieldset>
+                <legend>Your details</legend>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="first-name">
+                      First name <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      class="form-input"
+                      autocomplete="given-name"
+                      required
+                      minlength="2"
+                      placeholder="Priya"
+                      aria-required="true"
+                      aria-describedby="first-name-error"
+                      aria-invalid="false"
+                    />
+                    <span id="first-name-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="last-name">
+                      Last name <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      class="form-input"
+                      autocomplete="family-name"
+                      required
+                      minlength="2"
+                      placeholder="Kumar"
+                      aria-required="true"
+                      aria-describedby="last-name-error"
+                      aria-invalid="false"
+                    />
+                    <span id="last-name-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">
+                    Email address <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    autocomplete="email"
+                    required
+                    placeholder="priya@example.com"
+                    aria-required="true"
+                    aria-describedby="email-error email-hint"
+                    aria-invalid="false"
+                  />
+                  <span id="email-hint" class="form-hint">I'll reply to this address within 24 hours.</span>
+                  <span id="email-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Your message</legend>
+                <div class="form-group">
+                  <label class="form-label" for="reason">
+                    Reason for contact <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <select
+                    id="reason"
+                    name="reason"
+                    class="form-select"
+                    required
+                    aria-required="true"
+                    aria-describedby="reason-error"
+                    aria-invalid="false"
+                  >
+                    <option value="" disabled selected>Select a reason…</option>
+                    <option value="internship">Internship opportunity</option>
+                    <option value="collaboration">Project collaboration</option>
+                    <option value="mentorship">Mentorship / guidance</option>
+                    <option value="freelance">Freelance work</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span id="reason-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">
+                    Message <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    required
+                    minlength="20"
+                    placeholder="Tell me about the opportunity, project, or question you have in mind…"
+                    aria-required="true"
+                    aria-describedby="message-error message-hint"
+                    aria-invalid="false"
+                  ></textarea>
+                  <span id="message-hint" class="form-hint">Minimum 20 characters.</span>
+                  <span id="message-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+                </div>
+              </fieldset>
+
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  class="form-checkbox"
+                  required
+                  aria-required="true"
+                  aria-describedby="privacy-error"
+                  aria-invalid="false"
+                />
+                <label class="form-checkbox-label" for="privacy">
+                  I agree that my submitted data is collected and stored for the sole purpose of responding to my message.
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+              </div>
+              <span id="privacy-error" class="field-error" role="alert" aria-live="polite" hidden></span>
+
+              <div class="submit-row">
+                <button type="submit" class="btn btn-primary" aria-label="Submit contact form">
+                  Send message
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+                    <path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <span class="submit-note">No spam. No sharing of your data.</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo" aria-label="Joshika – Home">joshika<span aria-hidden="true">.</span>dev</a>
+          <p>Open to internships and collaborations. Based in Tamil Nadu, India.</p>
+        </div>
+        <nav aria-label="Pages navigation">
+          <h3 class="footer-heading">Pages</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Projects navigation">
+          <h3 class="footer-heading">Projects</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://hackathon-tracker-vnbx.onrender.com" target="_blank" rel="noopener noreferrer">HackTrack</a></li>
+            <li><a href="https://github.com/joshika" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Connect navigation">
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://linkedin.com/in/joshika" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://leetcode.com/joshika" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><small>&copy; <time datetime="2025">2025</time> Joshika. Semantic HTML5 — no frameworks.</small></p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://github.com/joshika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GH</a>
+          <a href="https://linkedin.com/in/joshika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

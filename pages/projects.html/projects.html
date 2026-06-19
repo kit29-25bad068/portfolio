@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Joshika – AI & Data Science Developer</title>
+  <meta name="description" content="Explore Joshika's full portfolio: HackTrack, Python AI projects, rule-based chatbot, recommendation system, and Tic Tac Toe AI." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://joshika.dev/projects.html" />
+
+  <meta property="og:title"       content="Projects | Joshika" />
+  <meta property="og:description" content="Full-stack apps, ML pipelines, and AI tools built by Joshika during her B.Tech and internships." />
+  <meta property="og:url"         content="https://joshika.dev/projects.html" />
+  <meta property="og:type"        content="website" />
+  <meta name="theme-color"        content="#0A0E1A" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .page-hero { padding: var(--space-16) 0 var(--space-12); border-bottom: 1px solid var(--color-border); }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(var(--text-4xl), 6vw, var(--text-5xl)); font-weight: 700; letter-spacing: -2px; margin-bottom: var(--space-4); }
+    .page-hero p { font-size: var(--text-lg); color: var(--color-muted); max-width: 560px; line-height: 1.7; }
+
+    .project-featured {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-10);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-10);
+      align-items: center;
+      margin-bottom: var(--space-6);
+      position: relative;
+      overflow: hidden;
+    }
+    .project-featured::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-2)); }
+    .featured-badge { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.2); padding: 2px 10px; border-radius: 999px; display: inline-block; margin-bottom: var(--space-4); letter-spacing: 0.08em; }
+    .featured-title { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text); margin-bottom: var(--space-4); letter-spacing: -1px; }
+    .featured-desc { color: var(--color-muted); line-height: 1.8; margin-bottom: var(--space-6); }
+    .featured-meta { display: flex; flex-wrap: wrap; gap: var(--space-6); margin-bottom: var(--space-6); }
+    .featured-meta-item { display: flex; flex-direction: column; gap: var(--space-1); }
+    .featured-meta-label { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); letter-spacing: 0.1em; }
+    .featured-meta-value { font-size: var(--text-sm); color: var(--color-text); font-weight: 500; }
+    .featured-preview { background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-6); font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-muted); line-height: 1.8; min-height: 200px; }
+    .featured-preview .comment { color: #4B6A8A; }
+    .featured-preview .keyword { color: var(--color-accent-2); }
+    .featured-preview .string  { color: var(--color-accent); }
+    .featured-preview .fn      { color: #34D399; }
+
+    @media (max-width: 768px) {
+      .project-featured { grid-template-columns: 1fr; }
+      .featured-preview { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Primary navigation">
+        <a href="../index.html" class="nav-logo" aria-label="Joshika – Home">joshika<span aria-hidden="true">.</span>dev</a>
+        <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+            <rect y="4"  width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="page-hero" aria-labelledby="projects-page-heading">
+      <div class="container">
+        <span class="section-eyebrow" aria-hidden="true">// my work</span>
+        <h1 id="projects-page-heading">Projects</h1>
+        <p>From full-stack web apps to AI pipelines — everything I've shipped during internships and on my own time.</p>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section aria-labelledby="featured-heading" style="padding: var(--space-16) 0 var(--space-8);">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow" aria-hidden="true">// flagship project</span>
+          <h2 class="section-title" id="featured-heading">Featured</h2>
+        </header>
+
+        <article class="project-featured" aria-labelledby="hacktrack-heading">
+          <div>
+            <span class="featured-badge" aria-label="Featured project">★ Featured</span>
+            <h3 class="featured-title" id="hacktrack-heading">HackTrack</h3>
+            <p class="featured-desc">A full-stack hackathon tracker with user authentication, MongoDB Atlas database, and Devpost profile integration. Built with Node.js/Express backend and a dark terminal-aesthetic frontend — live on Render.</p>
+            <dl class="featured-meta">
+              <div class="featured-meta-item">
+                <dt class="featured-meta-label">Stack</dt>
+                <dd class="featured-meta-value">Node.js · MongoDB · Express</dd>
+              </div>
+              <div class="featured-meta-item">
+                <dt class="featured-meta-label">Status</dt>
+                <dd class="featured-meta-value">🟢 Live</dd>
+              </div>
+              <div class="featured-meta-item">
+                <dt class="featured-meta-label">Type</dt>
+                <dd class="featured-meta-value">Full-Stack Web App</dd>
+              </div>
+            </dl>
+            <ul class="project-tags" role="list" style="margin-bottom:1.5rem;" aria-label="Technologies">
+              <li><span class="project-tag">Node.js</span></li>
+              <li><span class="project-tag">MongoDB Atlas</span></li>
+              <li><span class="project-tag">Express</span></li>
+              <li><span class="project-tag">JavaScript</span></li>
+              <li><span class="project-tag">Render</span></li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hackathon-tracker-vnbx.onrender.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View HackTrack live demo (opens in new tab)">Live Demo ↗</a>
+              <a href="https://github.com/joshika/hacktrack" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="View HackTrack source on GitHub (opens in new tab)">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="featured-preview" aria-hidden="true" role="presentation">
+<span class="comment">// HackTrack — server.js</span>
+<span class="keyword">const</span> express = <span class="fn">require</span>(<span class="string">'express'</span>);
+<span class="keyword">const</span> mongoose = <span class="fn">require</span>(<span class="string">'mongoose'</span>);
+
+<span class="comment">// Connect to MongoDB Atlas</span>
+mongoose.<span class="fn">connect</span>(process.env.<span class="keyword">MONGO_URI</span>)
+  .<span class="fn">then</span>(() =&gt; console.<span class="fn">log</span>(<span class="string">'DB connected'</span>));
+
+<span class="comment">// Auth route</span>
+app.<span class="fn">post</span>(<span class="string">'/login'</span>, async (req, res) =&gt; {
+  <span class="keyword">const</span> user = <span class="keyword">await</span> User.<span class="fn">findOne</span>({
+    email: req.body.email
+  });
+  <span class="keyword">if</span> (!user) <span class="keyword">return</span> res.<span class="fn">redirect</span>(<span class="string">'/login?err=1'</span>);
+  res.<span class="fn">redirect</span>(<span class="string">'/dashboard'</span>);
+});
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ALL PROJECTS -->
+    <section aria-labelledby="all-projects-heading" style="padding: var(--space-8) 0 var(--space-24);">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow" aria-hidden="true">// all projects</span>
+          <h2 class="section-title" id="all-projects-heading">All Projects</h2>
+        </header>
+
+        <ul class="projects-grid" role="list" aria-label="All project cards">
+
+          <li>
+            <article class="project-card" aria-labelledby="p-chatbot">
+              <div class="project-icon" aria-hidden="true">🤖</div>
+              <h3 class="project-title" id="p-chatbot">Rule-Based Chatbot</h3>
+              <p class="project-desc">A Python chatbot using pattern matching &amp; intent classification with no ML framework. Handles FAQs, greetings, and domain-specific queries via regex rules and a structured response dictionary.</p>
+              <ul class="project-tags" role="list" aria-label="Technologies used">
+                <li><span class="project-tag">Python</span></li>
+                <li><span class="project-tag">Regex</span></li>
+                <li><span class="project-tag">NLP</span></li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/joshika/rule-chatbot" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub source for Rule-Based Chatbot (opens in new tab)">GitHub ↗</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card" aria-labelledby="p-recsys">
+              <div class="project-icon" aria-hidden="true">🎯</div>
+              <h3 class="project-title" id="p-recsys">Recommendation System</h3>
+              <p class="project-desc">Hybrid recommendation engine combining content-based filtering with collaborative filtering. Built with Pandas and Scikit-learn; suggests movies/books based on user preference vectors.</p>
+              <ul class="project-tags" role="list" aria-label="Technologies used">
+                <li><span class="project-tag">Python</span></li>
+                <li><span class="project-tag">Pandas</span></li>
+                <li><span class="project-tag">Scikit-learn</span></li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/joshika/recommendation-system" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub source for Recommendation System (opens in new tab)">GitHub ↗</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card" aria-labelledby="p-tictactoe">
+              <div class="project-icon" aria-hidden="true">❎</div>
+              <h3 class="project-title" id="p-tictactoe">Tic Tac Toe AI</h3>
+              <p class="project-desc">An unbeatable Tic Tac Toe AI in Python using the minimax algorithm with alpha-beta pruning. Plays optimally as either X or O and can never be beaten.</p>
+              <ul class="project-tags" role="list" aria-label="Technologies used">
+                <li><span class="project-tag">Python</span></li>
+                <li><span class="project-tag">Minimax</span></li>
+                <li><span class="project-tag">Alpha-Beta</span></li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/joshika/tictactoe-ai" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub source for Tic Tac Toe AI (opens in new tab)">GitHub ↗</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card" aria-labelledby="p-portfolio">
+              <div class="project-icon" aria-hidden="true">🌐</div>
+              <h3 class="project-title" id="p-portfolio">This Portfolio</h3>
+              <p class="project-desc">Semantic HTML5 portfolio website built for the Thiranex internship. Scores 100 on Lighthouse Accessibility &amp; SEO, with full WCAG 2.1 AA compliance, ARIA roles, and skip navigation.</p>
+              <ul class="project-tags" role="list" aria-label="Technologies used">
+                <li><span class="project-tag">HTML5</span></li>
+                <li><span class="project-tag">CSS3</span></li>
+                <li><span class="project-tag">ARIA</span></li>
+                <li><span class="project-tag">WCAG 2.1</span></li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/joshika/portfolio" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub source for this portfolio (opens in new tab)">GitHub ↗</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card" aria-labelledby="p-tracker">
+              <div class="project-icon" aria-hidden="true">📊</div>
+              <h3 class="project-title" id="p-tracker">Monthly Self-Tracker</h3>
+              <p class="project-desc">Personal Excel tracker covering DSA progress, study hours, fitness, and self-improvement metrics. Custom formulas, conditional formatting, and monthly progress charts.</p>
+              <ul class="project-tags" role="list" aria-label="Technologies used">
+                <li><span class="project-tag">Excel</span></li>
+                <li><span class="project-tag">Data Analysis</span></li>
+                <li><span class="project-tag">Dashboards</span></li>
+              </ul>
+              <div class="project-links">
+                <span class="project-link" style="color:var(--color-muted); cursor:default;">Personal use</span>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo" aria-label="Joshika – Home">joshika<span aria-hidden="true">.</span>dev</a>
+          <p>Building in public. Open to internships and collaborations.</p>
+        </div>
+        <nav aria-label="Pages navigation">
+          <h3 class="footer-heading">Pages</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Projects navigation">
+          <h3 class="footer-heading">Projects</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://hackathon-tracker-vnbx.onrender.com" target="_blank" rel="noopener noreferrer">HackTrack Live</a></li>
+            <li><a href="https://github.com/joshika" target="_blank" rel="noopener noreferrer">All on GitHub</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Connect navigation">
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://linkedin.com/in/joshika" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://devpost.com/joshika" target="_blank" rel="noopener noreferrer">Devpost</a></li>
+            <li><a href="https://leetcode.com/joshika" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p><small>&copy; <time datetime="2025">2025</time> Joshika. Semantic HTML5 — no frameworks.</small></p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://github.com/joshika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GH</a>
+          <a href="https://linkedin.com/in/joshika" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
